@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* cabecera */
+
+.cabecera{
+    background-color: rgb(241, 243, 247);
+}
+
+.principal{
+    background-image: url("img/imagenlandingpage.jpg");
+    height: 22em;
+    color: white;
+    background-size: cover;
+}
+
+.modal{
+    color: black;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 0.1em;
+    text-shadow: 8px 8px 10px #000000;
+}
+
+.subtitulo{
+    text-align: center;
+    text-shadow: 8px 8px 10px #000000;
+}
+
+.botones{
+    justify-content: center;
+}
+
+.botoncabecera{
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+/* Formulario */
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.formulario input{
+    width: 25em;
+}
+
+
+.formularioarriba{
+    background-color: rgb(241, 243, 247);
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title> Comic Cloud </title>
+    </head>
+    <body>
+
+        <div class="container principal">
+            <div class="row">
+                <div class="col-12 titulo">
+                    <h1> Comics Cloud </h1>
+                </div>
+                <div class="col-12 subtitulo">
+                    <h4> Sumérgete en historias increíbles </h4>
+                </div>
+            </div>
+
+            <div class="row botones">
+
+            <div class="col-4 botones">
+                    <!-- Button trigger modal -->
+                    <button type="button botoncabecera" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Iniciar sesión
+                    </button>
+                    <p> ¿No tienes cuenta? <a href=""> Regístrate </a></p>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header formularioarriba">
+                        <h5 class="modal-title" id="exampleModalLabel"> <img src="img/Logoweb.PNG"> </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row formulario">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Usuario</label>
+                                        <input type=" text" class="form-control" id="usuario">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Password</label>
+                                        <input type="password" class="form-control" id="clave">
+                                    </div>
+                    
+                                    <p class="error" id="error"></p>
+                                    <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary">
+                    
+                                </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header formularioarriba">
+                    <h5 class="modal-title" id="exampleModalLabel"> <img src="img/Logoweb.PNG"> </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row formulario">
+                            <form>
+                                <div class="form-group">
+                                    <label for="">Usuario</label>
+                                    <input type=" text" class="form-control" id="usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Password</label>
+                                    <input type="password" class="form-control" id="clave">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Password</label>
+                                    <input type="password" class="form-control" id="clave">
+                                </div>
+                
+                                <p class="error" id="error"></p>
+                                <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary">
+                
+                            </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+            <script>
+
+                function Validar() {
+        
+                    //Coger los datos del formulario 
+                    var usuario = document.getElementById("usuario").value;
+                    var clave = document.getElementById("clave").value;
+        
+                    if (usuario == "admin" && clave == "1234") {
+        
+                        //Si somos administrador nos vamos a una web administrador
+                        window.location.pathname = 'lector.html';
+        
+        
+        
+                    } else {
+                        //Si algun dato está erroneo mostramos un mensaje
+                        document.getElementById("error").innerHTML="Datos del usuario erroneo";
+                    }
+        
+                    if (usuario == "pepe" && clave == "1234") {
+        
+                        //Si somos usuario nos vamos a una web lector
+                        window.location.pathname = 'lector.html';
+        
+                    } else {
+                        //Si algun dato está erroneo mostramos un mensaje
+                        document.getElementById("error").innerHTML="Datos del usuario erroneo";
+                
+                    }
+        
+        
+        
+                }
+        
+            </script>
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
