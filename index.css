@@ -36,12 +36,6 @@
     justify-content: center;
 }
 
-.botoncabecera{
-    display: flex;
-    justify-content: center;
-    margin-left: 80px;
-}
-
 /* Formulario */
 
 .formulario{
