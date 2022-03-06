@@ -13,97 +13,131 @@
     </head>
     <body>
 
-        <div class="container principal">
-            <div class="row">
-                <div class="col-12 titulo">
-                    <h1> Comics Cloud </h1>
-                </div>
-                <div class="col-12 subtitulo">
-                    <h4> Sumérgete en historias increíbles </h4>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="../img/Logoweb.PNG"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ml-lg-5">
+                  <a class="nav-link" href="#"> Inicio </a>
+                </li>
+                <li class="nav-item ml-lg-5">
+                  <a class="nav-link" href="#"> Mi cuenta </a>
+                </li>
+                <li class="nav-item dropdown ml-lg-5">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Horario
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"> Lunes a Sábado De 11:00 a 13:30 y de 17:00 a 19:30 hrs </a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-sm-0 my-2" data-toggle="modal" data-target="#iniciosesion" role="button"> Iniciar sesión </button>
+                <a class="btn btn-outline-secondary my-sm-0 my-2 ml-lg-2" href="../index.html" role="button"> Registrarse </a>
+              </form>
             </div>
+          </nav>
 
-            <div class="row botones">
 
-            <div class="col-4 botones">
-                    <!-- Button trigger modal -->
-                    <button type="button botoncabecera" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Iniciar sesión
-                    </button>
-                    <button type="button botoncabecera" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Registrarse
-                    </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header formularioarriba">
-                        <h5 class="modal-title" id="exampleModalLabel"> <img src="img/Logoweb.PNG"> </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row formulario">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="">Usuario</label>
-                                        <input type=" text" class="form-control" id="usuario">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Password</label>
-                                        <input type="password" class="form-control" id="clave">
-                                    </div>
-                    
-                                    <p class="error" id="error"></p>
-                                    <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary">
-                                </form>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+          <!-- Slider -->
+
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href=""><img class="d-block w-100" src="..." alt="First slide"></a>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+              </div>
             </div>
-        </div>
-        </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header formularioarriba">
-                        <h5 class="modal-title" id="exampleModalLabel"> <img src="img/Logoweb.PNG"> </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row formulario">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="">Usuario</label>
-                                        <input type=" text" class="form-control" id="usuario">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Password</label>
-                                        <input type="password" class="form-control" id="clave">
-                                    </div>
-                    
-                                    <p class="error" id="error"></p>
-                                    <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary">
-                    
-                                </form>
-                        </div>
-                    </div>
-                    </div>
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="iniciosesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header formularioarriba">
+                <h5 class="modal-title" id="exampleModalLabel"> <img src="img/Logoweb.PNG"> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 </div>
-                
-            </div>
+                <div class="modal-body">
+                    <div class="row formulario">
+                        <form>
+                            <div class="form-group">
+                                <label for="">Usuario</label>
+                                <input type="text" class="form-control" id="usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control" id="clave">
+                            </div>
             
+                            <p class="error" id="error"></p>
+                            <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
 
+        <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header formularioarriba">
+                <h5 class="modal-title" id="exampleModalLabel"> <img src="img/Logoweb.PNG"> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row formulario">
+                        <form>
+                            <div class="form-group">
+                                <label for="">Usuario</label>
+                                <input type=" text" class="form-control" id="usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control" id="clave">
+                            </div>
+            
+                            <p class="error" id="error"></p>
+                            <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary">
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
         
-
-
+        </div>
+        
 
 
 
