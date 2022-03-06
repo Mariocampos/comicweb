@@ -5,6 +5,8 @@
 
 /* Cabecera */
 
-.cabecera{
-    background-color: rgb(241, 243, 247);
+@media (min-width: 1024px) {
+    .nav-item{
+        margin-left: 2.5em;
+    }
 }

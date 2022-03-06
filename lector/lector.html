@@ -13,28 +13,35 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row cabecera">
-            <div class="col-2">
-                <a href="lector.html"><img src="../img/Logoweb.PNG"></a>
-            </div>
-            <ul class="nav col-12 col-md-auto mb-2 mb-md-0 mt-4 justify-content-between">
-                <li><a href="#" class="nav-link px-2 text-body ml-3"> Comics Cloud </a></li>
-                <li><a href="#" class="nav-link px-2 text-body ml-3"> Géneros </a></li>
-                <li><a href="#" class="nav-link px-2 text-body ml-3"> Mi cuenta </a></li>
-                <li><a href="#" class="nav-link px-2 text-body ml-3"> Horario </a></li>
-              </ul>
-            <div class="col-4">
-
-            </div>
-                <div class="col mt-4">
-                    <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
-                </div>
-                <div class="col mt-4">
-                    <button type="button" class="btn btn-light border-danger"> Cerrar sesión </button>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(241, 243, 247);">
+        <a class="navbar-brand" href="#"><img src="../img/Logoweb.PNG"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Inicio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Mi cuenta </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Horario
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"> Lunes a Sábado De 11:00 a 13:30 y de 17:00 a 19:30 hrs </a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <a class="btn btn-outline-danger my-sm-0 my-2" href="../index.html" role="button"> Cerrar sesión </a>
+          </form>
         </div>
+      </nav>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
