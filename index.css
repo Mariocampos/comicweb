@@ -15,3 +15,24 @@
 .formularioarriba{
     background-color: rgb(248, 249, 250);
 }
+
+.carousel-item img{
+    height: 20em;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon {
+    color: red;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.imagendescripcion{
+    width: 25em;
+}
+
+.pie{
+    font-size: medium;
+}
