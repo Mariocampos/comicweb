@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item ml-lg-5">
-                  <a class="nav-link" href="#"> Inicio </a>
+                  <a class="nav-link" href="admin.html"> Inicio </a>
                 </li>
                 <li class="nav-item ml-lg-5">
                   <a class="nav-link" href="../micuentaadmin.html"> Mi cuenta </a>
@@ -45,8 +45,154 @@
 
 
 
+          <!-- Contenido -->
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Comics del sistema </th>
+                <th scope="col"> Comics validados o no </th>
+                <th scope="col"> Usuarios dados de alta </th>
+                <th scope="col"> Ventas </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td> ÁRABE DEL FUTURO</td>
+                <td> Pato aventuras (validado)</td>
+                <td> admin 1234 </td>
+                <td> (STRAIGHT OR NOT X4) = 51,96€ </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td> ¿Eres mi madre? </td>
+                <td> La triste vida de un diseñador web (no validado)</td>
+                <td> pepe 1234 </td>
+                <td> (JUEGO DE TERAPIA X10) = 128€ </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td> LA TRAPISONDA </td>
+                <td> Póker online el comic (validado)</td>
+                <td></td>
+                <td> (DADO X6) = 120,90€ </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td> STRAIGHT OR NOT </td>
+                <td> King Boo (validado)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td> DADO </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td> JUEGO DE TERAPIA </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td> ¡Renchin! </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td> Spider-Man </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td> Spiderman </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td> PUNCH AND JUDY </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td> CALISTO Y MELIVEA </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td> HAMBRE </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
 
+          <p class="d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-success btn-lg" data-toggle="modal" data-target="#registro"> Subir Comic </button>
+          </p>
 
+          <!-- Modal -->
+
+          <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registraseLabel" a-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgb(248, 249, 250);">
+                <h5 class="modal-title" id="registraseLabel"> <img src="../img/Logoweb.PNG"> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <form class="was-validated d-block">
+                          <div class="row">
+                          <div class="form-group col-6">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                          </div>
+                          <div class="form-group col-6">
+                            <input type="text" class="form-control" placeholder="Editorial" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-6">
+                            <input type="text" class="form-control is-invalid" placeholder="Autor" required>
+                          </div>
+                          <div class="form-group col-6">
+                            <input type="text" class="form-control is-invalid" placeholder="Género" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="number" class="form-control is-invalid" placeholder="ISBN" required>
+                        </div>
+                        <textarea placeholder="Descripción" cols="62" rows="5"></textarea>
+
+                        <p class="d-flex justify-content-center">
+                          <a href="admin.html"><button type="button" class="btn btn-outline-success btn-lg mt-3"> Subir Comic </button></a>
+                        </p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
 
 
