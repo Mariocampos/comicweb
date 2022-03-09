@@ -14,7 +14,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="../img/Logoweb.PNG"></a>
+            <a class="navbar-brand" href="#"><img src="img/Logoweb.PNG"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -107,6 +107,12 @@
                             <div class="form-group">
                                 <input type="password" class="form-control btn-block" id="clave" placeholder="Contraseña">
                             </div>
+                            <div class="form-check">
+                              <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Recuérdame
+                              </label>
+                            </div>
                             <p class="error" id="error"></p>
                             <input type="button" onclick="Validar()" value="Iniciar sesión" class="btn btn-primary btn-block">
                         </form>
@@ -174,7 +180,7 @@
 
         
         <!-- Pie -->
-          <div class="row text-primary p-4 justify-content-center flex-wrap pie" style="background-color: rgb(248, 249, 250);">
+          <div class="row text-primary p-4 justify-content-center mx-auto" style="background-color: rgb(248, 249, 250); font-size: medium;">
             
             <div class="col-4 pl-lg-5">
               <h5> Links </h5>
@@ -233,7 +239,7 @@
                     if (usuario == "admin" && clave == "1234") {
         
                         //Si somos administrador nos vamos a una web administrador
-                        window.location.pathname = 'admin/admin.html';
+                        window.location.pathname = 'administrador/admin.html';
         
         
                     } else {
