@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.iconos svg{
+    color: rgb(141, 141, 42);
+}
+
+.imagen:hover{
+    width: 25em;
+    height: 30em;
+    transition: all 1s;
+}
+
+.star-pato svg:hover{
+    color: yellow;
+    border: yellow;
+}
